@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: bayrktlihn
+      POSTGRES_DB: bayrktlihn
+      POSTGRES_PASSWORD: bayrktlihn
+  mysql:
+    image: mysql
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: bayrktlihn
+      MYSQL_DATABASE: bayrktlihn
+      MYSQL_USER: bayrktlihn
+      MYSQL_PASSWORD: bayrktlihn
